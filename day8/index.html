@@ -1,0 +1,27 @@
+<canvas id="myCanvas" width="500" height="500"></canvas>
+<script>
+  // get a reference to the canvas element
+  var canvas = document.getElementById('myCanvas');
+  // get a reference to the drawing context
+  var ctx = canvas.getContext('2d');
+
+  // draw a red circle
+  ctx.beginPath();
+  ctx.arc(100, 100, 50, 0, 2 * Math.PI);
+  ctx.fillStyle = 'red';
+  ctx.fill();
+
+  // draw a green rectangle
+  ctx.beginPath();
+  ctx.rect(200, 50, 100, 100);
+  ctx.fillStyle = 'green';
+  ctx.fill();
+
+  // draw a blue triangle
+  ctx.beginPath();
+  ctx.moveTo(350, 50);
+  ctx.lineTo(400, 150);
+  ctx.lineTo(300, 150);
+  ctx.fillStyle = 'blue';
+  ctx.fill();
+</script>

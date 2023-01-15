@@ -1,0 +1,67 @@
+/* Add some style to the header */
+header {
+    background-color: #006699;
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    background-color: #CCCCCC;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+  }
+  
+  nav a:hover {
+    color: #006699;
+    background-color: #FFFFFF;
+  }
+  
+  /* Style the main content area */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  section {
+    margin: 20px 0;
+  }
+  
+  /* Style the headings */
+  h2 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #006699;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+  }
+  
