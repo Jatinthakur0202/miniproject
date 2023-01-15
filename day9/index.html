@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css ">
+    <title>Document</title>
+</head>
+<body>
+ <div class="inbox">
+    <div class="item">   
+        <input type="checkbox" name="item" id="item1">
+        <label for="item1">Item 1</label>
+        <p>This is an inbox layout</p>
+    </div>
+    <div class="item">   
+        <input type="checkbox" name="item" id="item1">
+        <label for="item1">Item 1</label>
+        <p>This is an inbox layout</p>
+    </div>
+    <div class="item">   
+        <input type="checkbox" name="item" id="item1">
+        <label for="item1">Item 1</label>
+        <p>This is an inbox layout</p>
+    </div>
+    <div class="item">   
+        <input type="checkbox" name="item" id="item1">
+        <label for="item1">Item 1</label>
+        <p>This is an inbox layout</p>
+    </div>
+    <div class="item">   
+        <input type="checkbox" name="item" id="item1">
+        <label for="item1">Item 1</label>
+        <p>This is an inbox layout</p>
+    </div>
+    <div class="item">   
+        <input type="checkbox" name="item" id="item1">
+        <label for="item1">Item 1</label>
+        <p>This is an inbox layout</p>
+    </div>
+    <div class="item">   
+        <input type="checkbox" name="item" id="item1">
+        <label for="item1">Item 1</label>
+        <p>This is an inbox layout</p>
+    </div>
+    <div class="item">   
+        <input type="checkbox" name="item" id="item1">
+        <label for="item1">Item 1</label>
+        <p>This is an inbox layout</p>
+    </div>
+ </div> 
+<script>
+    const items = document.querySelectorAll('.inbox input[type="checkbox"]');
+    function handleCheck(e){
+        if(e.shiftKey && this.checked){
+            let inBetween = false;
+            items.forEach(item => {
+                if(item === this || item === lastChecked){
+                    inBetween = !inBetween;
+                }
+                if(inBetween){
+                    item.checked = true;
+                }
+            })
+        }
+        lastChecked = this;
+    }
+    
+    items.forEach(item => item.addEventListener('click', handleCheck));
+</script>  
+</body>
+</html>
